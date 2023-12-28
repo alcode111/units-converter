@@ -19,11 +19,21 @@ convertBtn.addEventListener('click', function() {
     ${userInput} meters = ${metersToFeet(userInput).toFeet} feet | ${userInput} feet = ${metersToFeet(userInput).toMeters} meters
     </p>`
 
+    paraLitersGallons.innerHTML = `<p class"measure-subtitle" id="meters-feet">
+    ${userInput} liters = ${litersToGallons(userInput).toGallons} gallons | ${userInput} gallons = ${litersToGallons(userInput).toLiters} liters
+    </p>`
 })
 
 function metersToFeet(meter){
     return {
         toFeet: (meter * meterToFoot).toFixed(3),
         toMeters: (meter / meterToFoot).toFixed(3)
+    }
+}
+
+function litersToGallons(liter) {
+    return {
+        toGallons: (liter * literToGallon).toFixed(3),
+        toLiters: (liter / literToGallon).toFixed(3)
     }
 }
