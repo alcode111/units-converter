@@ -37,3 +37,35 @@ body {
     justify-content: center;
     gap: 23px;
 }
+
+#title {
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+}
+
+#unit-input {
+    display: block;
+    width: 117px;
+    height: 83px;
+    margin: 30px auto; 
+    border: 2px solid #2C060E;
+    border-radius: 5px;
+    font-size: 58px;
+    font-weight: 800;
+    background: #87112B;
+    color: white;
+    text-align: center;
+}
+
+#convert-btn {
+    display: block;
+    width: 117px;
+    height: 42px;
+    padding: 9px 27px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    font-size: 16px;
+    margin: auto;
+}
