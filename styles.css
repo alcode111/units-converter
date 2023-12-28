@@ -69,3 +69,28 @@ body {
     font-size: 16px;
     margin: auto;
 }
+
+.card {
+    width: 500px;
+    height: 108px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.card p {
+    margin: 0;
+}
+
+.measure-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #5A537B;
+}
+
+.measure-subtitle {
+    font-size: 14px;
+}
