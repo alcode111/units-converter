@@ -22,6 +22,10 @@ convertBtn.addEventListener('click', function() {
     paraLitersGallons.innerHTML = `<p class"measure-subtitle" id="meters-feet">
     ${userInput} liters = ${litersToGallons(userInput).toGallons} gallons | ${userInput} gallons = ${litersToGallons(userInput).toLiters} liters
     </p>`
+
+    paraKilosPounds.innerHTML = `<p class="measure-subtitle" id="kilos-pounds">
+    ${userInput} kilos = ${kilosToPounds(userInput).toPounds} pounds | ${userInput} pounds = ${kilosToPounds(userInput).toKilos} kilos
+    </p>`
 })
 
 function metersToFeet(meter){
@@ -35,5 +39,12 @@ function litersToGallons(liter) {
     return {
         toGallons: (liter * literToGallon).toFixed(3),
         toLiters: (liter / literToGallon).toFixed(3)
+    }
+}
+
+function kilosToPounds(kilo) {
+    return {
+        toPounds: (kilo * kiloToPound).toFixed(3),
+        toKilos: (kilo / kiloToPound).toFixed(3)
     }
 }
