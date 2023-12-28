@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #1F2937;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#container {
+    width: 550px;
+    height: 729px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
