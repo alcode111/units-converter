@@ -3,6 +3,7 @@
 }
 
 body {
+    height: 100vh;
     background: #1F2937;
     font-family: 'Inter', sans-serif;
     display: flex;
